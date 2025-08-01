@@ -1,44 +1,66 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-  }
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 
-  .container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  }
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
 
-  #countdown {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .time {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 1rem;
-    border-radius: 10px;
-    min-width: 70px;
-  }
+#countdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
 
+.time {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 70px;
+  flex: 1 1 70px;
+}
+
+.time span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
   .time span {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
   }
 
-  .time small {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    opacity: 0.75;
+  h1 {
+    font-size: 1.5rem;
   }
+}

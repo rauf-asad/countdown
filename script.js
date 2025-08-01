@@ -1,4 +1,4 @@
-const targetDate = new Date("2025-09-16T00:00:00");
+const targetDate = new Date(Date.UTC(2025, 9, 16, 8, 30, 0));
 
 function updateCountdown() {
   const now = new Date();
